@@ -11,7 +11,10 @@ console.log(document.querySelectorAll(".aba"))
 
 const abas = document.querySelectorAll(".aba")
 abas.forEach(aba =>  {
+    // 1 passo pegar os elementos que representam as abas
      aba.addEventListener("click", function(){
         console.log("clicou na aba", aba)
+        const abaSelecionada =  document.querySelector(".aba.selecionada")
+        console.log(abaSelecionada)
      })
 })
