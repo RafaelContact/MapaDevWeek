@@ -14,7 +14,9 @@ abas.forEach(aba =>  {
     // 1 passo pegar os elementos que representam as abas
      aba.addEventListener("click", function(){
         console.log("clicou na aba", aba)
-        const abaSelecionada =  document.querySelector(".aba.selecionada")
+        const abaSelecionada =  document.querySelector(".aba.selecionado")
         console.log(abaSelecionada)
+        abaSelecionada.classList.remove("selecionado")
+        // 2 quando o usuário clicar , desmarcar a aba selecionada
      })
 })
